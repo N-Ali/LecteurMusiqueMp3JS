@@ -1,12 +1,11 @@
-/** MVC - Model Page & Controller test Page
+/*
 * Création de la classe Lecteur
 * Utilisation d'Aurora js
 * Utilisation bibliotheque Tableau
 * Bouton Aleatoire actif
-* Bouton Repeat Inactif
-* Affichage Durée
-* Fonction barre progressive
-* Mise en place d'une partie du css directement dans ce fichier
+* Bouton Repeat actif
+* Bouton Next actif
+* Bouton Previous actif
 * // TODO Lecture continue
 * @author N-Ali
 * @version 1.0.10
