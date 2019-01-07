@@ -1,3 +1,75 @@
-Projet javascript 
+Mon projet est le Lecteur de musique Mp3, l’application doit être capable de créer une playlist , jouer un morceau aléatoirement , de créer une playlist ainsi de suite.
+L’idée était donc de faire une application du style Apple Music Spotify ou Deezer
 
-date: 7 janvier
+Tout d’abord avant de commencer le projet, nous avons effectué un énorme travail de recherche et de documentation sur le sujet, personnellement je ne connaissais pas ce que c’était aurora.js.
+ On s’est inspiré un peu de tutoriel sur le web avant d’attaquer le projet
+
+
+    
+Architecture du projet
+
+Le projet est composé de plusieurs répertoires:
+Le répertoire « js » qui contient les fichiers JS
+Le répertoire « css » qui contient le fichier style.css
+Le répertoire « Images » qui contient les images de l’application
+Le répertoire « audio » qui contient les pistes audio 
+
+
+Le répertoire JS contient 6 fichier.js 
+app.js qui contient le code principal 
+mp3.js qui fonctionne avec aurora.js
+out.js qui fonctionne avec aurora.js 
+aurora.js qui permet d’encoder la musique et de créer des fonction pour jouer la musique
+index.js est une base de donnée lorsque j’ai installé MySql mais ce fichier était un fichier test
+require.js qui permet d’utiliser du JQuery et d’autre fonctionnalité
+
+
+
+
+
+Le code
+
+La partie du code a était très dur, en effet aurora.js était très dur à comprendre , le code est structuré avec plusieurs fonctions 
+
+-function controle(): fonction qui permet de contrôler le son par exemple pour augmenter le son ou le diminuer mais cette fonction ne fonctionne pas 
+
+-function init(): fonction qui permet d’initialiser le canvas au départ je voulais insérer une image lorsque l’on joue une musique comme ci l’image était la pochette de la musique
+
+-function createPrevious(myInterface): Fonction qui permet de le bouton précédent
+ 
+-function createPlay(myInterface): Fonction qui permet de créer le bouton play
+
+-function createStop(myInterface): Fonction qui permet de créer le bouton stop
+
+-function createNext(myInterface): Fonction qui permet de créer le bouton suivant
+
+-function createRepeat(myInterface): Fonction qui permet de créer le bouton repeat
+
+-function createShuffle(myInterface):Fonction qui permet de créer le bouton aléatoire
+
+
+class Lecteur : Classe qui initialise les spécificité du lecteur , ainsi cette classe est donc la base principal l’élément qui va permettre de jouer , arrêter etc la musique.
+
+
+
+Difficulté Rencontré
+
+La plus grosse difficulté était la compréhension d’aurora.js et des autres fichier.js cité précédemment,
+
+A chaque modification le lecteur ne marché plus , exemple pour créer une fonction qui permet de modifier le volume sonore du son . 
+Pour le contrôleur de son l’idée était de créer un bouton « + » et un bouton « - «  qui fonctionne comme les autres boutons du style « play » « stop » , mais cela ne prenait pas en compte le son.
+
+De plus la gestion des événement tel que prendre en compte la durée d’un morceau et l’afficher sous forme de barre progressive à l’instar de youtube n’a pas était possible.
+
+Autre chose la base de donnée, j’ai voulu créer une base de donnée  et un serveur,  ayant effectuer des recherches j’ai voulu utiliser Phpmyadmin ou MySql , voir NodeJs.
+Pour le serveur  j’ai voulu utiliser Apache , je m’étais aperçu que lister le contenu d’un répertoire en Javascript était pas possible , c’est pour cela qu’un fichier php est présent 
+mais je n’ai pas réussi a le mettre en place.
+
+
+Amélioration
+
+Ce que l’on peu améliorer sur notre projet est tout les élément manquant du style serveur, base de donné et d’améliorer le Drag ’n ‘ Drop qui fonctionne partiellement , en effet le drag n drop de l’application permet juste de changer l’ordre du tableau des titres.
+J’aurai voulu utiliser le drag n drop pour créer une playlist en utilisant les fichier stocker dans la base de donnée 
+J’aurai voulu aussi mettre un système de reconnaissance des artistes avec le nom, titres, album ,
+Globalement je suis un peu déçu du contenue du projet j’avais des idées en tête mais je n’ai pas pu les réaliser.
+Mais cela m’a permit  de progresser en javascript , plus tard j’essaierai d’améliorer le projet en incluant toute les idées que j’ai eu et incluant aussi les élément manquant important 
